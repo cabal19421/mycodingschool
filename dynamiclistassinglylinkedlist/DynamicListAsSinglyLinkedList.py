@@ -122,3 +122,93 @@ class DynamicListAsSinglyLinkedList:
     def reset(self):
         for x in range(self.size, 0, -1):
             self.remove_at(x)
+            
+            
+            
+            
+            
+#
+#
+#class node:
+#
+#    def __init__(self):
+#        self.data = None
+#        self.next = None
+#        
+#        
+#class linkedlist:
+#    
+#    def __init__(self):
+#            self.size = 0
+#            self.head = None
+#            
+#
+#    def add(self, newnode, pos = None):
+#
+#        tmp = self.head
+#        if pos is not None and pos<=self.size:
+#            cnt = 0
+#            prev = None
+#            while cnt < pos:
+#                prev = tmp
+#                tmp=tmp.next
+#                cnt+=1
+#            if prev == None:
+#                self.head=newnode
+#                newnode.next=tmp
+#            else:
+#                prev.next=newnode
+#                newnode.next=tmp
+#        else:
+#            if not self.head:
+#                self.head = newnode
+#                return
+#            else:
+#                while tmp.next != None:
+#                    tmp=tmp.next
+#                tmp.next = newnode
+#        self.size+=1
+#    
+#
+#    def prt_list(self):
+#
+#        tmp = self.head
+#        while tmp != None:
+#            print tmp.data
+#            tmp=tmp.next
+#        print "\n\n"
+#            
+#
+#if __name__ == "__main__":
+#    jqll = linkedlist()
+#    
+#    newnode = node()
+#    newnode.data = "your mom"
+#    jqll.add(newnode)
+#    jqll.prt_list()
+#    
+#    assnode = node()
+#    assnode.data = "your sister"
+#    jqll.add(assnode)
+#    jqll.prt_list()
+#    
+#    mehnode = node()
+#    mehnode.data = "your mom again"
+#    jqll.add(mehnode)
+#    jqll.prt_list()
+#    
+#    dicnode = node()
+#    dicnode.data = "ima shove my self into the ll"
+#    jqll.add(dicnode,2)
+#    jqll.prt_list()
+#    
+#    eicnode = node()
+#    eicnode.data = "ima shove my self into the ll # 2"
+#    jqll.add(eicnode,0)
+#    jqll.prt_list()
+#    
+#    ticnode = node()
+#    ticnode.data = "ima shove my self into the ll # 3"
+#    jqll.add(ticnode,jqll.size+1)
+#    jqll.prt_list()
+#    
